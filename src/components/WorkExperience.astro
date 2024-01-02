@@ -1,0 +1,29 @@
+---
+interface Props {
+  role: string;
+  company: string;
+  companyLogo: string;
+  description: string[];
+}
+
+const { role, company, companyLogo, description } = Astro.props;
+---
+
+<div class="my-16 first-of-type:mt-8 max-w-2xl">
+  <header
+    class="after:block after:w-24 after:my-4 after:h-[1px] after:bg-neutral-300"
+  >
+    <div class="flex gap-4 items-center">
+      <h2 class="text-2xl font-thin">{role}<div>{company}</div></h2>
+      <img
+        src={companyLogo}
+        alt={`Logo of ${company}`}
+        class="flex-grow-0 flex-shrink-0 max-w-32 max-h-16 object-contain"
+      />
+    </div>
+  </header>
+
+  <ul class="list-disc pl-5">
+    {description.map((item) => <li>{item}</li>)}
+  </ul>
+</div>
