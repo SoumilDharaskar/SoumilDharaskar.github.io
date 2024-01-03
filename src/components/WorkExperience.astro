@@ -3,27 +3,45 @@ interface Props {
   role: string;
   company: string;
   companyLogo: string;
+  date: string;
   description: string[];
 }
 
-const { role, company, companyLogo, description } = Astro.props;
+const { role, company, companyLogo, date, description } = Astro.props;
 ---
 
-<div class="my-16 first-of-type:mt-8 max-w-2xl">
-  <header
-    class="after:block after:w-24 after:my-4 after:h-[1px] after:bg-neutral-300"
-  >
-    <div class="flex gap-4 items-center">
-      <h2 class="text-2xl font-thin">{role}<div>{company}</div></h2>
-      <img
-        src={companyLogo}
-        alt={`Logo of ${company}`}
-        class="flex-grow-0 flex-shrink-0 max-w-32 max-h-16 object-contain"
-      />
+<div class='flex gap-4'>
+  <div class='col-start-2 col-end-4 md:mx-auto relative'>
+    <div class='h-full w-4 flex items-center justify-center'>
+      <div class='h-full w-0.5 bg-neutral-300 rounded-full pointer-events-none'>
+      </div>
     </div>
-  </header>
+    <div
+      class='size-4 absolute top-24 -mt-1 rounded-full bg-neutral-300 border border-neutral-600 shadow text-center'
+    >
+    </div>
+  </div>
+  <div class='my-16 first-of-type:mt-8 max-w-2xl'>
+    <header
+      class='after:block after:w-24 after:mt-2 after:mb-4 after:h-[1px] after:bg-neutral-300'
+    >
+      <div
+        class='flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between'
+      >
+        <div class='order-2 sm:order-none'>
+          <h2 class='text-2xl font-thin'>{role}<div>{company}</div></h2>
+          <h3 class='italic mt-1 text-md'>{date}</h3>
+        </div>
+        <img
+          src={companyLogo}
+          alt={`Logo of ${company}`}
+          class='order-1 sm:order-none flex-grow-0 flex-shrink-0 max-h-16 max-w-32 h-full object-contain'
+        />
+      </div>
+    </header>
 
-  <ul class="list-disc pl-5 text-lg">
-    {description.map((item) => <li>{item}</li>)}
-  </ul>
+    <ul class='list-disc pl-5 text-lg'>
+      {description.map((item) => <li class='text-pretty'>{item}</li>)}
+    </ul>
+  </div>
 </div>

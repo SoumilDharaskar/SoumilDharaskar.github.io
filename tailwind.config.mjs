@@ -5,12 +5,19 @@ export default {
     extend: {
       animation: {
         fade: 'fadeIn 1s ease-in-out',
+        slide: 'slideIn 1s ease-in-out',
       },
 
       keyframes: (theme) => ({
         fadeIn: {
-          '0%': { backgroundColor: theme('colors.transparent') },
-          '100%': { backgroundColor: theme('colors.red.300') },
+          //   '0%': { color: theme('colors.transparent') },
+          //   '100%': { color: theme('colors.white') },
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideIn: {
+          '0%': { transform: 'translateY(60px)', opacity: 0 },
+          '100%': { transform: 'translateY(0px)', opacity: 1 },
         },
       }),
     },

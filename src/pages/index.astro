@@ -1,135 +1,195 @@
 ---
 // @ts-ignore
-import { Code, Mail, Settings, Tool, User, Cpu } from "astro-feather-icons";
-import { CodeBracketIcon, WrenchScrewdriverIcon, Cog8ToothIcon, CpuChipIcon, UserIcon } from '@heroicons/react/24/solid'
-import Layout from "../layouts/Layout.astro";
-import WorkExperience from "../components/WorkExperience.astro";
-import Title from "../components/Title.astro";
-import Project from "../components/Project.astro";
+import { Code, Mail, Settings, Tool, User, Cpu } from 'astro-feather-icons';
+import {
+  CodeBracketIcon,
+  WrenchScrewdriverIcon,
+  Cog8ToothIcon,
+  CpuChipIcon,
+  UserIcon,
+} from '@heroicons/react/24/solid';
+import Layout from '../layouts/Layout.astro';
+import WorkExperience from '../components/WorkExperience.astro';
+import Title from '../components/Title.astro';
+import Project from '../components/Project.astro';
 ---
 
-<Layout title="Soumil Dharaskar">
+<Layout title='Soumil Dharaskar'>
   <section
-    id="header"
-    class="p-8 flex flex-col items-center bg-gradient-to-tr from-green-300 to-blue-600 text-white"
+    class='pt-16 px-6 flex flex-col items-center bg-gradient-to-tr from-green-300 to-blue-600 text-white pb-32 sticky -top-[43.5rem] z-10'
   >
-    <Code class="mb-4" />
-    <h1 class="text-2xl mb-2 text-center animate-fade ">
-      Hi, I'm <strong>Soumil Dharaskar!</strong><br>Software Engineer with 2+ years of internship experience <br> <strong>Seeking New Graduate Roles</strong> 
-    </h1>
-   
-    <img
-      src="/images/52943436060_6a4f216eb2_o.jpg"
-      alt="Portrait of Soumil Dharaskar"
-      class="w-full max-w-60 rounded-3xl mb-8"
-    />
-    <ul class="block sm:flex gap-4">
-      <li>
-        <a
-          href="#experience"
-          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
-          >Experience</a
-        >
-      </li>
-      <li>
-        <a
-          href="#skills"
-          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300"
-          >Skills</a
-        >
-      </li>
-      <li>
-        <a
-          href="#projects"
-          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"
-          >Projects</a
-        >
-      </li>
-    </ul>
+    <div class='flex flex-col items-center animate-fade'>
+      <Code class='mb-4 size-16' />
+      <div class='text-2xl mb-4 text-center'>
+        <h1 class='text-4xl'>
+          Hi, I'm <strong class='text-blue-950'>Soumil Dharaskar</strong>!
+        </h1>
+        <h2 class='mt-2'>
+          Software Engineer with 2+ years of internship experience <br />
+          <strong class='text-blue-950'>Seeking 2024 New Graduate Roles</strong>
+        </h2>
+      </div>
+      <img
+        src='/images/52943436060_6a4f216eb2_o.jpg'
+        alt='Portrait of Soumil Dharaskar'
+        class='w-full max-w-60 rounded-3xl mb-8'
+        width='240px'
+        height='360px'
+      />
+    </div>
   </section>
-  <section id="experience" class="py-8 px-6 flex items-center flex-col w-full">
+  <ul
+    class='flex flex-col md:flex-row justify-center gap-4 animate-slide text-xl sticky top-0 py-6 pb-12 -mt-32 text-white z-20'
+  >
+    <li>
+      <a
+        href='#bio'
+        class='block px-8 py-2 border-white rounded-md border uppercase tracking-wider select-none transition ease-in-out delay-50 hover:scale-105 hover:bg-yellow-300 duration-300 hover:text-yellow-950 hover:border-yellow-950'
+        >About Me</a
+      >
+    </li>
+    <li>
+      <a
+        href='#experience'
+        class='block px-8 py-2 border-white rounded-md border uppercase tracking-wider select-none transition ease-in-out delay-50 hover:scale-105 hover:bg-indigo-300 duration-300 hover:text-indigo-950 hover:border-indigo-950'
+        >Experience</a
+      >
+    </li>
+    <li>
+      <a
+        href='#skills'
+        class='block px-8 py-2 border-white rounded-md border uppercase tracking-wider select-none transition ease-in-out delay-50 hover:scale-105 hover:bg-blue-300 duration-300 hover:text-blue-950 hover:border-blue-950'
+        >Skills</a
+      >
+    </li>
+    <li>
+      <a
+        href='#projects'
+        class='block px-8 py-2 border-white rounded-md border uppercase tracking-wider select-none transition ease-in-out delay-50 hover:scale-105 hover:bg-orange-300 duration-300 hover:text-blue-950 hover:border-blue-950'
+        >Projects</a
+      >
+    </li>
+  </ul>
+  <section
+    id='bio'
+    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full bg-yellow-100 text-yellow-950'
+  >
+    <Title>About Me</Title>
+    <img
+      src='/images/University_of_Waterloo_seal.svg.png'
+      alt='University of Waterloo Logo'
+      class='rounded-3xl mt-6 size-28'
+    />
+    <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
+      Hi there! I am an avid developer and currently a fourth-year student
+      studying <strong>Computer Engineering</strong> at the <strong
+        >University of Waterloo</strong
+      > in Waterloo, Ontario, Canada, on track to complete a Bachelor of Applied
+      Science Degree in April of 2024. In my free time, I enjoy doing physical
+      activity such as playing basketball, soccer, swimming, as well as gaming.
+      I also enjoy programming in my past time, working on side-projects and
+      applications that have different purposes. Currently I am seeking <strong
+        >permanent, full time new graduate roles</strong
+      > in <strong>Software Engineering</strong> and other related positions,
+      and would be more than interested in exploring any opportunity presented.
+    </p>
+  </section>
+  <section
+    id='experience'
+    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full'
+  >
     <Title>Experience</Title>
     <div>
       <WorkExperience
-        role="Software Engineer Intern"
-        company="Wild Fork Canada"
-        companyLogo="/images/337240544_1297084747557655_7176881005707344321_n.jpg"
+        role='Software Engineer Intern'
+        company='Wild Fork Canada'
+        companyLogo='/images/337240544_1297084747557655_7176881005707344321_n.jpg'
+        date='September 2023 - December 2023'
         description={[
-          "Engineered production-grade front-end features with Next.js and Redux for the Wild Fork e-commerce platform, contributing to a retail CR increase from 2 to 2.5%",
-          "Designed digital campaigns on Dynamic Yield using HTML, CSS, and JavaScript to drive personalized customer experiences, increasing the CTR by 57% and achieving a profit increase exceeding twofold",
-          "Implemented an Add To Cart service with DY and JavaScript for product recommendation carousels, leveraging a Wild Fork cart API and Redux to successfully update cart state, now live across 10+ webpages",
-          "Orchestrated content-based workflows with Contentful and GraphQL to fetch digital assets and launch state-of-the-art digital experiences for product retail webpages and campaigns",
+          'Engineered production-grade front-end features with Next.js and Redux for the Wild Fork e-commerce platform, contributing to a retail CR increase from 2 to 2.5%',
+          'Designed digital campaigns on Dynamic Yield using HTML, CSS, and JavaScript to drive personalized customer experiences, increasing the CTR by 57% and achieving a profit increase exceeding twofold',
+          'Implemented an Add To Cart service with DY and JavaScript for product recommendation carousels, leveraging a Wild Fork cart API and Redux to successfully update cart state, now live across 10+ webpages',
+          'Orchestrated content-based workflows with Contentful and GraphQL to fetch digital assets and launch state-of-the-art digital experiences for product retail webpages and campaigns',
         ]}
       />
       <WorkExperience
-        role="Software Engineer Intern"
-        company="Ford Motor Company"
-        companyLogo="/images/Ford_logo_flat.svg.png"
+        role='Software Engineer Intern'
+        company='Ford Motor Company'
+        companyLogo='/images/Ford_logo_flat.svg.png'
+        date='January 2023 - April 2023'
         description={[
-          "Worked on the SYNC Settings Infotainment Team, contributing to the development of the user interface for the new SYNC4 in-vehicle system",
-          "Developed and enhanced various settings, text, input, and processing features for the SYNC4 human-machine interface using React and Redux Saga",
-          "Implemented integral software changes by simulating and updating a live SYNC4 workbench using VnModSim, MQTT, and VNC Viewer, to test new changes in real-time and ensure performance and reliability",
-          "Participated in 3-week sprints, led code reviews, and contributed to stand-ups as part of the Scrum agile framework, to gain and provide constructive feedback, and increase productivity, team cohesion, and efficiency",
-          "Implemented React unit tests via Jest + Mocha with 98% branch coverage and dynamically logged 90% of variables",
+          'Worked on the SYNC Settings Infotainment Team, contributing to the development of the user interface for the new SYNC4 in-vehicle system',
+          'Developed and enhanced various settings, text, input, and processing features for the SYNC4 human-machine interface using React and Redux Saga',
+          'Implemented integral software changes by simulating and updating a live SYNC4 workbench using VnModSim, MQTT, and VNC Viewer, to test new changes in real-time and ensure performance and reliability',
+          'Participated in 3-week sprints, led code reviews, and contributed to stand-ups as part of the Scrum agile framework, to gain and provide constructive feedback, and increase productivity, team cohesion, and efficiency',
+          'Implemented React unit tests via Jest + Mocha with 98% branch coverage and dynamically logged 90% of variables',
         ]}
       />
       <WorkExperience
-        role="Full Stack Developer Intern"
-        company="Royal Bank of Canada"
-        companyLogo="/images/RBC-Logo.png"
+        role='Full Stack Developer Intern'
+        company='Royal Bank of Canada'
+        companyLogo='/images/RBC-Logo.png'
+        date='May 2022 - August 2022'
         description={[
-          "Implemented integral UI display features in React for a test environment dashboard, enhancing the status monitoring interface for various banking software services",
-          "Developed scalable data polling software using Java classes and POJOs, with Spring Boot, to improve data reception from banking services",
-          "Established HDFS connection and integrated Hadoop with dashboard back-end using Java and Spring Boot, to increase dataset processing power and data access throughput",
-          "Harnessed the JDBC Java API to remodel PostgreSQL table architecture to optimize SQL queries, reducing query execution time",
-          "Leveraged Python, Jira API, and Pandas to immediately capture data and initiate lead time calculation for 20+ Jira tasks",
+          'Implemented integral UI display features in React for a test environment dashboard, enhancing the status monitoring interface for various banking software services',
+          'Developed scalable data polling software using Java classes and POJOs, with Spring Boot, to improve data reception from banking services',
+          'Established HDFS connection and integrated Hadoop with dashboard back-end using Java and Spring Boot, to increase dataset processing power and data access throughput',
+          'Harnessed the JDBC Java API to remodel PostgreSQL table architecture to optimize SQL queries, reducing query execution time',
+          'Leveraged Python, Jira API, and Pandas to immediately capture data and initiate lead time calculation for 20+ Jira tasks',
         ]}
       />
       <WorkExperience
-        role="DevOps Engineer Intern"
-        company="Sun Life Financial"
-        companyLogo="/images/image.jpg"
+        role='DevOps Engineer Intern'
+        company='Sun Life Financial'
+        companyLogo='/images/image.jpg'
+        date='September 2021 - December 2021'
         description={[
-          "Refactored 100+ testing scripts leveraging Jenkins jobs, to automate the deployment of repository code to SonarQube, minimizing code verification delay",
-          "Configured 100+ SonarQube projects leveraging Ansible jobs to perform efficient code analysis for errors, formulate analysis reports, and reduce code vulnerabilities by 70%",
-          "Developed YAML code for Ansible Playbooks, increasing deployment efficiency for compiled artifacts from SonarQube projects to target hosts",
-          "Led the financial planning sector in a team-based design challenge to propose an online portal that would improve the onboarding process for new hires",
+          'Refactored 100+ testing scripts leveraging Jenkins jobs, to automate the deployment of repository code to SonarQube, minimizing code verification delay',
+          'Configured 100+ SonarQube projects leveraging Ansible jobs to perform efficient code analysis for errors, formulate analysis reports, and reduce code vulnerabilities by 70%',
+          'Developed YAML code for Ansible Playbooks, increasing deployment efficiency for compiled artifacts from SonarQube projects to target hosts',
+          'Led the financial planning sector in a team-based design challenge to propose an online portal that would improve the onboarding process for new hires',
         ]}
       />
       <WorkExperience
-        role="Big Data Developer Intern"
-        company="Sun Life Financial"
-        companyLogo="/images/image.jpg"
+        role='Big Data Developer Intern'
+        company='Sun Life Financial'
+        companyLogo='/images/image.jpg'
+        date='January 2021 - April 2021'
         description={[
-          "Implemented 10+ ETL Python scripts for an ETL pipeline, to assist in the migration of Sun Life accounting standards to IFRS17",
-          "Developed AWS Lambda functions and SQL queries for AWS Glue jobs, to facilitate Amazon S3 ETL operations",
-          "Compiled and analyzed a document of various data feeds used for comprehensive testing and a model office verification platform, for outlining the data transfer process between infrastructure databases in the IFRS17 migration",
+          'Implemented 10+ ETL Python scripts for an ETL pipeline, to assist in the migration of Sun Life accounting standards to IFRS17',
+          'Developed AWS Lambda functions and SQL queries for AWS Glue jobs, to facilitate Amazon S3 ETL operations',
+          'Compiled and analyzed a document of various data feeds used for comprehensive testing and a model office verification platform, for outlining the data transfer process between infrastructure databases in the IFRS17 migration',
         ]}
       />
       <WorkExperience
-        role="Technical Systems Analyst Intern"
-        company="Sun Life Financial"
-        companyLogo="/images/image.jpg"
+        role='Technical Systems Analyst Intern'
+        company='Sun Life Financial'
+        companyLogo='/images/image.jpg'
+        date='May 2020 - August 2020'
         description={[
-          "Configured and applied a standard global image to Windows 10 machines using USB and PXE boot methods, to successfully deploy laptops to remote users",
-          "Composed user specifications and pushed application packages to specific machines, using a company configuration portal and SCCM to produce a machine suitable for a user’s specific tasks",
-          "Provided technical client support to remote users using the Remote Desktop Connection software, to assist users with machine setup, and perform data analysis and troubleshooting in the case of imaging and computer software issues",
+          'Configured and applied a standard global image to Windows 10 machines using USB and PXE boot methods, to successfully deploy laptops to remote users',
+          'Composed user specifications and pushed application packages to specific machines, using a company configuration portal and SCCM to produce a machine suitable for a user’s specific tasks',
+          'Provided technical client support to remote users using the Remote Desktop Connection software, to assist users with machine setup, and perform data analysis and troubleshooting in the case of imaging and computer software issues',
         ]}
       />
     </div>
   </section>
   <section
-    id="skills"
-    class="py-8 px-6 flex items-center flex-col w-full bg-green-300 text-green-950"
+    id='skills'
+    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full bg-green-100 text-green-950'
   >
-    <Title class="mb-8">Skills</Title>
-    <div class="flex gap-28 justify-center text-wrap">
-      <div class="gap-10">
-        <CodeBracketIcon className="mb-4 size-16"/>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+    <Title class='mb-8'>Skills</Title>
+    <div
+      class='grid grid-cols-1 sm:grid-cols-2 flex-wrap md:flex md:justify-center gap-28 gap-y-12 mx-4'
+    >
+      <div class='gap-10'>
+        <CodeBracketIcon className='mb-4 size-16' />
+        <h1
+          class='text-2xl mb-2 underline underline-offset-4 text-left font-thin'
+        >
           <strong>Languages</strong>
         </h1>
-        <ul class="list-disc pl-5 text-lg">
+        <ul class='list-disc pl-5 text-lg'>
           <li>TypeScript/JavaScript</li>
           <li>Python</li>
           <li>C/C#/C++</li>
@@ -143,28 +203,31 @@ import Project from "../components/Project.astro";
       </div>
 
       <div>
-        <Cog8ToothIcon className="mb-4 size-16"/>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+        <Cog8ToothIcon className='mb-4 size-16' />
+        <h1
+          class='text-2xl mb-2 underline underline-offset-4 text-left font-thin'
+        >
           <strong>Frameworks</strong>
         </h1>
-        <ul class="list-disc pl-5 text-lg">
+        <ul class='list-disc pl-5 text-lg'>
           <li>React.js</li>
           <li>React Native</li>
           <li>Redux</li>
           <li>Flask</li>
           <li>Node.js</li>
           <li>Fastify.js</li>
-          <li>Jupyter
-            Notebook</li>
+          <li>Jupyter Notebook</li>
         </ul>
       </div>
 
       <div>
-        <WrenchScrewdriverIcon className="mb-4 size-16"/>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+        <WrenchScrewdriverIcon className='mb-4 size-16' />
+        <h1
+          class='text-2xl mb-2 underline underline-offset-4 text-left font-thin'
+        >
           <strong>Tools</strong>
         </h1>
-        <ul class="list-disc pl-5 text-lg">
+        <ul class='list-disc pl-5 text-lg'>
           <li>Spring Boot</li>
           <li>Git</li>
           <li>GitHub</li>
@@ -184,11 +247,13 @@ import Project from "../components/Project.astro";
       </div>
 
       <div>
-        <CpuChipIcon className="mb-4 size-16" />
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+        <CpuChipIcon className='mb-4 size-16' />
+        <h1
+          class='text-2xl mb-2 underline underline-offset-4 text-left font-thin'
+        >
           <strong>Technologies</strong>
         </h1>
-        <ul class="list-disc pl-5 text-lg">
+        <ul class='list-disc pl-5 text-lg'>
           <li>AWS Glue</li>
           <li>Amazon S3</li>
           <li>AWS Lambda</li>
@@ -200,19 +265,20 @@ import Project from "../components/Project.astro";
       </div>
 
       <div>
-        <UserIcon className="mb-4 size-16 "/>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+        <UserIcon className='mb-4 size-16' />
+        <h1
+          class='text-2xl mb-2 underline underline-offset-4 text-left font-thin'
+        >
           <strong>Soft Skills</strong>
         </h1>
-        <ul class="list-disc pl-5 text-lg">
+        <ul class='list-disc pl-5 text-lg'>
           <li>Critical Thinking</li>
           <li>Quick Learning</li>
           <li>Leadership</li>
           <li>Collaboration</li>
           <li>Resourcefulness</li>
           <li>Time Management</li>
-          <li>Work
-            Ethic</li>
+          <li>Work Ethic</li>
           <li>Positive Attitude</li>
         </ul>
       </div>
@@ -238,91 +304,93 @@ import Project from "../components/Project.astro";
           <strong>Soft Skills</strong>
         </h1>
       </ul> -->
-      
     </div>
   </section>
-  <section id="projects" class="py-8 px-6 flex items-center flex-col w-full">
+  <section
+    id='projects'
+    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full'
+  >
     <Title>Projects</Title>
     <Project
-      name="DriveGuard"
+      name='DriveGuard'
       description={[
-        "Mobile application detecting symptoms of distracted driving while providing constructive feedback in real-time, to foster added safety during drive sessions",
-        "Co-developed the UI in React Native, allowing users to start and stop drive sessions and view past session statistics via backend API endpoints created using Flask, while storing session data in an Amazon RDS database",
+        'Mobile application detecting symptoms of distracted driving while providing constructive feedback in real-time, to foster added safety during drive sessions',
+        'Co-developed the UI in React Native, allowing users to start and stop drive sessions and view past session statistics via backend API endpoints created using Flask, while storing session data in an Amazon RDS database',
       ]}
-      image="/images/DriveGuard Sessions Page.png"
-      imageAlt="DriveGuard Sessions Page"
+      image='/images/DriveGuard Sessions Page.png'
+      imageAlt='DriveGuard Sessions Page'
     />
     <Project
-      name="Farmer Aid"
+      name='Farmer Aid'
       description={[
-        "A native Android mobile application developed in Kotlin, with Jetpack Compose, that serves as an efficient, real-time, and user-friendly platform to assist farmers in their farming activities",
-        "Integrates text-to-speech technology, transaction sorting, and a Google Maps API feature for tracking community fridges, among many other innovative features that simplify the processing, updating, and tracking of produce inventory",
-        "Developed the end to end user interface and backend logic for a transactions viewing page applying the Model-View-ViewModel architectural style, allowing farmers to view their crop harvest, food donation, and produce selling transactions",
-        "Implemented different filter chips on the transactions page to sort transactions based on different criteria",
-        "Supported the development of the Google Maps feature by creating a page allowing users to enter details for a new community fridge to track, which then placed a location identifier for the fridge onto a Google Maps snippet",
+        'A native Android mobile application developed in Kotlin, with Jetpack Compose, that serves as an efficient, real-time, and user-friendly platform to assist farmers in their farming activities',
+        'Integrates text-to-speech technology, transaction sorting, and a Google Maps API feature for tracking community fridges, among many other innovative features that simplify the processing, updating, and tracking of produce inventory',
+        'Developed the end to end user interface and backend logic for a transactions viewing page applying the Model-View-ViewModel architectural style, allowing farmers to view their crop harvest, food donation, and produce selling transactions',
+        'Implemented different filter chips on the transactions page to sort transactions based on different criteria',
+        'Supported the development of the Google Maps feature by creating a page allowing users to enter details for a new community fridge to track, which then placed a location identifier for the fridge onto a Google Maps snippet',
       ]}
-      image="/images/FarmerAid Transactions Page.png"
-      imageAlt="Farmer Aid Transactions Page"
+      image='/images/FarmerAid Transactions Page.png'
+      imageAlt='Farmer Aid Transactions Page'
     />
     <Project
-      name="EVENTure Event Planner"
+      name='EVENTure Event Planner'
       description={[
-        "A cross-platform mobile application that allows organizers of real life events to register their events on the application, and create distributable QR codes to be scanned by event attendees",
-        "Scanning the QR codes awards attendees with points, which, once accumulated, can be redeemed to receive future event discounts",
-        "I worked in a team where I was responsible for developing the backend of the application using Node.js with the Express framework, while the frontend was developed in React by a team member",
-        "I built an API that provided event data from a SQL database to the frontend based on different requests, to facilitate the successful operation of various frontend features",
+        'A cross-platform mobile application that allows organizers of real life events to register their events on the application, and create distributable QR codes to be scanned by event attendees',
+        'Scanning the QR codes awards attendees with points, which, once accumulated, can be redeemed to receive future event discounts',
+        'I worked in a team where I was responsible for developing the backend of the application using Node.js with the Express framework, while the frontend was developed in React by a team member',
+        'I built an API that provided event data from a SQL database to the frontend based on different requests, to facilitate the successful operation of various frontend features',
       ]}
-      image="/images/EVENTure Screenshot.jpg"
-      imageAlt="EVENTure Event Planner Screenshot"
+      image='/images/EVENTure Screenshot.jpg'
+      imageAlt='EVENTure Event Planner Screenshot'
     />
     <Project
-      name="Battlesnake Game"
+      name='Battlesnake Game'
       description={[
-        "I worked in a team to develop a digital Battlesnake in the form of a web server, which implemented an API for a virtual game",
-        "In the game, our designed snake maneuvered an 11x11 square grid to collect food and force other snakes to collide into its body, while avoiding the bodies of other snakes to win. The game client executed a simulation with many snakes on a game board, which continued until only one snake was remaining on the board. A sample simulation is shown on the right",
-        "In order to play, the game client sent HTTP requests to our web server, including information about the state of the game board, such as the health and location of our snake on the board, as well as the location of food and other snakes. This data was used to implement logic that would determine the best possible move based on the current game state",
-        "In the RBC Summer 2022 Battlesnake competition, my team achieved 2nd place among participants in the advanced developer category with highly competitive snakes",
+        'I worked in a team to develop a digital Battlesnake in the form of a web server, which implemented an API for a virtual game',
+        'In the game, our designed snake maneuvered an 11x11 square grid to collect food and force other snakes to collide into its body, while avoiding the bodies of other snakes to win. The game client executed a simulation with many snakes on a game board, which continued until only one snake was remaining on the board. A sample simulation is shown on the right',
+        'In order to play, the game client sent HTTP requests to our web server, including information about the state of the game board, such as the health and location of our snake on the board, as well as the location of food and other snakes. This data was used to implement logic that would determine the best possible move based on the current game state',
+        'In the RBC Summer 2022 Battlesnake competition, my team achieved 2nd place among participants in the advanced developer category with highly competitive snakes',
       ]}
-      image="/images/63020bccf01cad40ee758c34_snake.gif"
-      imageAlt="Battlesnake Game GIF"
+      image='/images/63020bccf01cad40ee758c34_snake.gif'
+      imageAlt='Battlesnake Game GIF'
     />
     <Project
-      name="Various Java, C/C++ Projects"
+      name='Various Java, C/C++ Projects'
       description={[
-        "Constructed a compiler in Java by creating recognizers and parsers to synthesize circuits describing Boolean expressions",
-        "Developed a memory management system using C in kernel to manually allocate data in the heap, simulating malloc()",
-        "Designed and implemented a multi-tasked kernel in C for the management, scheduling, and preemption of real-time OS tasks",
-        "In the RBC Summer 2022 Battlesnake competition, my team achieved 2nd place among participants in the advanced developer category with highly competitive snakes",
-        "Created a transaction tracking application as a linked list in C++ that stored and sorted transactions in the list",
+        'Constructed a compiler in Java by creating recognizers and parsers to synthesize circuits describing Boolean expressions',
+        'Developed a memory management system using C in kernel to manually allocate data in the heap, simulating malloc()',
+        'Designed and implemented a multi-tasked kernel in C for the management, scheduling, and preemption of real-time OS tasks',
+        'In the RBC Summer 2022 Battlesnake competition, my team achieved 2nd place among participants in the advanced developer category with highly competitive snakes',
+        'Created a transaction tracking application as a linked list in C++ that stored and sorted transactions in the list',
       ]}
-      image="/images/0_DDkULymLKgl0qSZV.jpg"
-      imageAlt="Languages Picture"
+      image='/images/0_DDkULymLKgl0qSZV.jpg'
+      imageAlt='Languages Picture'
     />
   </section>
   <footer
-    class="flex flex-col items-center justify-center w-full bg-gray-800 text-white py-8 gap-4"
+    class='flex flex-col items-center justify-center w-full bg-gray-800 text-white py-8 gap-4'
   >
-    <ul class="flex gap-4 items-center">
+    <ul class='flex gap-4 items-center'>
       <li>
-        <a href="https://github.com/SoumilDharaskar" target="_blank">
-          <span class="sr-only">GitHub</span>
+        <a href='https://github.com/SoumilDharaskar' target='_blank'>
+          <span class='sr-only'>GitHub</span>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 98 96"
-            class="w-8 transition-colors hover:text-gray-400"
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 98 96'
+            class='w-8 transition-colors hover:text-gray-400'
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"></path></svg
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z'
+              fill='currentColor'></path></svg
           >
         </a>
       </li>
       <li>
-        <a href="mailto:soumil.dharaskar@gmail.com" target="_blank">
-          <span class="sr-only">Email</span>
-          <Mail class="size-8 transition-colors hover:text-gray-400" />
+        <a href='mailto:soumil.dharaskar@gmail.com' target='_blank'>
+          <span class='sr-only'>Email</span>
+          <Mail class='size-8 transition-colors hover:text-gray-400' />
         </a>
       </li>
     </ul>
