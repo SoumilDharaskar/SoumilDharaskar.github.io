@@ -1,0 +1,45 @@
+---
+type Props =
+  | {
+      name: string;
+      description: string[];
+      image: string;
+      imageAlt: string;
+    }
+  | {
+      name: string;
+      description: string[];
+      image?: undefined;
+      imageAlt?: undefined;
+    };
+
+const { name, description, image, imageAlt } = Astro.props;
+---
+
+<div
+  class='flex flex-col justify-center sm:flex-row my-12 first-of-type:mt-8 w-full gap-6'
+>
+  <div class='max-w-2xl'>
+    <header
+      class='after:block after:w-24 after:my-4 after:h-[1px] after:bg-neutral-300'
+    >
+      <div class='flex gap-4 items-center'>
+        <h2 class='text-2xl font-thin'>{name}</h2>
+      </div>
+    </header>
+
+    <ul class='list-disc pl-5 text-lg'>
+      {description.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+  {
+    image && (
+      <img
+        src={image}
+        alt={imageAlt}
+        class='flex-grow-0 flex-shrink-0 w-full max-w-48 object-contain self-center'
+      />
+    )
+  }
+</div>
