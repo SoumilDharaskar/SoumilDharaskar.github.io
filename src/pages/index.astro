@@ -1,11 +1,11 @@
 ---
 // @ts-ignore
-import { Code, Mail, Terminal, Settings, Tool } from "astro-feather-icons";
+import { Code, Mail, Settings, Tool, User, Cpu } from "astro-feather-icons";
+import { CodeBracketIcon, WrenchScrewdriverIcon, Cog8ToothIcon, CpuChipIcon, UserIcon } from '@heroicons/react/24/solid'
 import Layout from "../layouts/Layout.astro";
 import WorkExperience from "../components/WorkExperience.astro";
 import Title from "../components/Title.astro";
 import Project from "../components/Project.astro";
-const title = "Soumil";
 ---
 
 <Layout title="Soumil Dharaskar">
@@ -14,9 +14,10 @@ const title = "Soumil";
     class="p-8 flex flex-col items-center bg-gradient-to-tr from-green-300 to-blue-600 text-white"
   >
     <Code class="mb-4" />
-    <h1 class="text-2xl mb-2 text-center">
-      Hi, I'm <strong>Soumil Dharaskar!</strong><br />
+    <h1 class="text-2xl mb-2 text-center animate-fade ">
+      Hi, I'm <strong>Soumil Dharaskar!</strong><br>Software Engineer with 2+ years of internship experience <br> <strong>Seeking New Graduate Roles</strong> 
     </h1>
+   
     <img
       src="/images/52943436060_6a4f216eb2_o.jpg"
       alt="Portrait of Soumil Dharaskar"
@@ -26,21 +27,21 @@ const title = "Soumil";
       <li>
         <a
           href="#experience"
-          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none"
+          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           >Experience</a
         >
       </li>
       <li>
         <a
           href="#skills"
-          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none"
+          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300"
           >Skills</a
         >
       </li>
       <li>
         <a
           href="#projects"
-          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none"
+          class="block px-8 py-2 border-white rounded-md border uppercase tracking-wider text-sm select-none transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"
           >Projects</a
         >
       </li>
@@ -121,18 +122,123 @@ const title = "Soumil";
     id="skills"
     class="py-8 px-6 flex items-center flex-col w-full bg-green-300 text-green-950"
   >
-    <!-- TODO -->
     <Title class="mb-8">Skills</Title>
-    <div class="flex gap-96 justify-center">
-      <ul class="grid grid-cols-2 gap-2">
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
+    <div class="flex gap-28 justify-center text-wrap">
+      <div class="gap-10">
+        <CodeBracketIcon className="mb-4 size-16"/>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+          <strong>Languages</strong>
+        </h1>
+        <ul class="list-disc pl-5 text-lg">
+          <li>TypeScript/JavaScript</li>
+          <li>Python</li>
+          <li>C/C#/C++</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Verilog</li>
+          <li>VHDL</li>
+        </ul>
+      </div>
+
+      <div>
+        <Cog8ToothIcon className="mb-4 size-16"/>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+          <strong>Frameworks</strong>
+        </h1>
+        <ul class="list-disc pl-5 text-lg">
+          <li>React.js</li>
+          <li>React Native</li>
+          <li>Redux</li>
+          <li>Flask</li>
+          <li>Node.js</li>
+          <li>Fastify.js</li>
+          <li>Jupyter
+            Notebook</li>
+        </ul>
+      </div>
+
+      <div>
+        <WrenchScrewdriverIcon className="mb-4 size-16"/>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+          <strong>Tools</strong>
+        </h1>
+        <ul class="list-disc pl-5 text-lg">
+          <li>Spring Boot</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>GitLab</li>
+          <li>Bitbucket</li>
+          <li>SonarQube</li>
+          <li>Jenkins</li>
+          <li>Ansible</li>
+          <li>Jira</li>
+          <li>Postman</li>
+          <li>Swagger</li>
+          <li>Unix</li>
+          <li>VNModSim</li>
+          <li>VNC Viewer</li>
+          <li>WinSCP</li>
+        </ul>
+      </div>
+
+      <div>
+        <CpuChipIcon className="mb-4 size-16" />
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+          <strong>Technologies</strong>
+        </h1>
+        <ul class="list-disc pl-5 text-lg">
+          <li>AWS Glue</li>
+          <li>Amazon S3</li>
+          <li>AWS Lambda</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>MQTT</li>
+          <li>APIs</li>
+        </ul>
+      </div>
+
+      <div>
+        <UserIcon className="mb-4 size-16 "/>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left font-thin">
+          <strong>Soft Skills</strong>
+        </h1>
+        <ul class="list-disc pl-5 text-lg">
+          <li>Critical Thinking</li>
+          <li>Quick Learning</li>
+          <li>Leadership</li>
+          <li>Collaboration</li>
+          <li>Resourcefulness</li>
+          <li>Time Management</li>
+          <li>Work
+            Ethic</li>
+          <li>Positive Attitude</li>
+        </ul>
+      </div>
+
+      <!-- <ul class="grid grid-cols-5 gap-16">  
+        <Settings class="mb-4 size-16" />
+        <Terminal class="mb-4 size-16" />
+        <Tool class="mb-4 size-16" />
+        <Cpu class="mb-4 size-16" />
+        <User class="mb-4 size-16" />
       </ul>
-      <p>I am text</p>
+      <ul>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
+          <strong>Frameworks</strong>
+        </h1>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
+          <strong>Tools</strong>
+        </h1>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
+          <strong>Technologies</strong>
+        </h1>
+        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
+          <strong>Soft Skills</strong>
+        </h1>
+      </ul> -->
+      
     </div>
   </section>
   <section id="projects" class="py-8 px-6 flex items-center flex-col w-full">
@@ -196,9 +302,6 @@ const title = "Soumil";
   <footer
     class="flex flex-col items-center justify-center w-full bg-gray-800 text-white py-8 gap-4"
   >
-    <p>
-      Made with <span class="text-red-500">&hearts;</span> by Soumil Dharaskar
-    </p>
     <ul class="flex gap-4 items-center">
       <li>
         <a href="https://github.com/SoumilDharaskar" target="_blank">
