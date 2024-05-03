@@ -12,6 +12,7 @@ import Layout from '../layouts/Layout.astro';
 import WorkExperience from '../components/WorkExperience.astro';
 import Title from '../components/Title.astro';
 import Project from '../components/Project.astro';
+import ProjectURL from '../components/ProjectURL.astro';
 ---
 
 <Layout title='Soumil Dharaskar'>
@@ -282,28 +283,6 @@ import Project from '../components/Project.astro';
           <li>Positive Attitude</li>
         </ul>
       </div>
-
-      <!-- <ul class="grid grid-cols-5 gap-16">  
-        <Settings class="mb-4 size-16" />
-        <Terminal class="mb-4 size-16" />
-        <Tool class="mb-4 size-16" />
-        <Cpu class="mb-4 size-16" />
-        <User class="mb-4 size-16" />
-      </ul>
-      <ul>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
-          <strong>Frameworks</strong>
-        </h1>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
-          <strong>Tools</strong>
-        </h1>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
-          <strong>Technologies</strong>
-        </h1>
-        <h1 class="text-2xl mb-2 underline hover:underline-offset-8 text-left">
-          <strong>Soft Skills</strong>
-        </h1>
-      </ul> -->
     </div>
   </section>
   <section
@@ -311,16 +290,17 @@ import Project from '../components/Project.astro';
     class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full'
   >
     <Title>Projects</Title>
-    <Project
+    <ProjectURL
       name='DriveGuard'
       description={[
-        'Mobile application detecting symptoms of distracted driving while providing constructive feedback in real-time, to foster added safety during drive sessions',
+        'Mobile application detecting symptoms of distracted driving using a custom trained machine learning model, while providing constructive feedback in real-time, to foster added safety during drive sessions',
         'Co-developed the UI in React Native, allowing users to start and stop drive sessions and view past session statistics via backend API endpoints created using Flask, while storing session data in an Amazon RDS database',
       ]}
-      image='/images/DriveGuard Sessions Page.png'
+      image='/images/driveguard_homepage.png'
       imageAlt='DriveGuard Sessions Page'
+      url='https://github.com/SoumilDharaskar/DriveGuard'
     />
-    <Project
+    <ProjectURL
       name='Farmer Aid'
       description={[
         'A native Android mobile application developed in Kotlin, with Jetpack Compose, that serves as an efficient, real-time, and user-friendly platform to assist farmers in their farming activities',
@@ -331,8 +311,9 @@ import Project from '../components/Project.astro';
       ]}
       image='/images/FarmerAid Transactions Page.png'
       imageAlt='Farmer Aid Transactions Page'
+      url='https://github.com/SoumilDharaskar/FarmerAid'
     />
-    <Project
+    <ProjectURL
       name='EVENTure Event Planner'
       description={[
         'A cross-platform mobile application that allows organizers of real life events to register their events on the application, and create distributable QR codes to be scanned by event attendees',
@@ -342,8 +323,9 @@ import Project from '../components/Project.astro';
       ]}
       image='/images/EVENTure Screenshot.jpg'
       imageAlt='EVENTure Event Planner Screenshot'
+      url='https://github.com/SoumilDharaskar/Eventure'
     />
-    <Project
+    <ProjectURL
       name='Battlesnake Game'
       description={[
         'I worked in a team to develop a digital Battlesnake in the form of a web server, which implemented an API for a virtual game',
@@ -353,6 +335,7 @@ import Project from '../components/Project.astro';
       ]}
       image='/images/63020bccf01cad40ee758c34_snake.gif'
       imageAlt='Battlesnake Game GIF'
+      url='https://github.com/sjChen15/Barrys_Berries'
     />
     <Project
       name='Various Java, C/C++ Projects'
@@ -388,7 +371,7 @@ import Project from '../components/Project.astro';
         </a>
       </li>
       <li>
-        <a href='mailto:soumil.dharaskar@gmail.com' target='_blank'>
+        <a href='mailto:sdharask@uwaterloo.ca' target='_blank'>
           <span class='sr-only'>Email</span>
           <Mail class='size-8 transition-colors hover:text-gray-400' />
         </a>
