@@ -29,7 +29,9 @@ const { role, company, companyLogo, date, description } = Astro.props;
         class='flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between'
       >
         <div class='order-2 sm:order-none'>
-          <h2 class='text-2xl font-thin'>{role}<div>{company}</div></h2>
+          <h2 class='text-2xl font-thin'>
+            <div class='font-medium text-3xl'>{company}</div><div>{role}</div>
+          </h2>
           <h3 class='italic mt-1 text-md'>{date}</h3>
         </div>
         <img
@@ -41,7 +43,13 @@ const { role, company, companyLogo, date, description } = Astro.props;
     </header>
 
     <ul class='list-disc pl-5 text-lg'>
-      {description.map((item) => <li class='text-pretty'>{item}</li>)}
+      {
+        description.map((item) => (
+          <li class='text-pretty'>
+            <Fragment set:html={item} />
+          </li>
+        ))
+      }
     </ul>
   </div>
 </div>
