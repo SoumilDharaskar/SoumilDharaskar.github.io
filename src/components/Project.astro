@@ -29,7 +29,13 @@ const { name, description, image, imageAlt } = Astro.props;
     </header>
 
     <ul class='list-disc pl-5 text-lg'>
-      {description.map((item) => <li>{item}</li>)}
+      {
+        description.map((item) => (
+          <li>
+            <Fragment set:html={item} />
+          </li>
+        ))
+      }
     </ul>
   </div>
 
