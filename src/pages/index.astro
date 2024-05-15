@@ -17,7 +17,7 @@ import ProjectURL from '../components/ProjectURL.astro';
 
 <Layout title='Soumil Dharaskar'>
   <section
-    class='md:pt-16 pb-64 px-6 flex flex-col items-center bg-gradient-to-tr from-green-300 to-blue-600 text-white md:pb-32 sticky -top-[43.5rem] z-10'
+    class='md:pt-16 pb-64 px-6 flex flex-col items-center bg-gradient-to-tr from-green-300 to-blue-600 text-white md:pb-32 sticky md:-top-[43.5rem] -top-[39.5rem] z-10'
   >
     <div class='flex flex-col items-center animate-fade'>
       <Code class='mb-4 size-16' />
@@ -25,10 +25,32 @@ import ProjectURL from '../components/ProjectURL.astro';
         <h1 class='text-4xl'>
           Hi, I'm <strong class='text-blue-950'>Soumil Dharaskar</strong>!
         </h1>
-        <h2 class='mt-2'>
-          Software Engineer with 2+ years of internship experience <br />
+
+        <h1 class='mt-5 mb-4 text-3xl'>
+          I am a <strong class='text-blue-950'
+            ><span id='about-me-typed'></span></strong
+          >
+        </h1>
+
+        <!-- <h2 class='mt-5'>
           <strong class='text-blue-950'>Seeking 2024 New Graduate Roles</strong>
-        </h2>
+        </h2> -->
+
+        <script
+          is:inline
+          src='https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js'></script>
+        <script>
+          var typed = new Typed('#about-me-typed', {
+            strings: [
+              '^1000Software Engineer.^1000 ',
+              '^1000Gamer.^1000 ',
+              '^1000Swimmer.^1000 ',
+            ],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+          });
+        </script>
       </div>
       <img
         src='/images/52943436060_6a4f216eb2_o.jpg'
@@ -73,7 +95,7 @@ import ProjectURL from '../components/ProjectURL.astro';
   </ul>
   <section
     id='bio'
-    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full bg-yellow-100 text-yellow-950'
+    class='py-16 px-6 md:scroll-mt-24 scroll-mt-64 flex items-center flex-col w-full bg-yellow-100 text-yellow-950'
   >
     <Title>About Me</Title>
     <img
@@ -82,22 +104,39 @@ import ProjectURL from '../components/ProjectURL.astro';
       class='rounded-3xl mt-6 size-28'
     />
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      Hi there! I am an avid developer and currently a fourth-year student
-      studying <strong>Computer Engineering</strong> at the <strong
-        >University of Waterloo</strong
-      > in Waterloo, Ontario, Canada, on track to complete a Bachelor of Applied
-      Science Degree in April of 2024. In my free time, I enjoy doing physical activity
-      such as playing basketball, soccer, swimming, as well as gaming. I also enjoy
-      programming in my past time, working on side-projects and applications that
-      have different purposes. Currently I am seeking <strong
+      <strong>Hey there! 👋</strong> My name is <strong>Soumil Dharaskar</strong
+      >, and I am a <strong>Full-Stack Software Engineer</strong> and a graduate
+      of the <strong>Computer Engineering</strong> program at the
+      <strong>University of Waterloo</strong> in Waterloo, Ontario, Canada, having
+      completed my Bachelor of Applied Science Degree as of April 2024.
+    </p>
+    <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
+      Throughout my career, I have received <strong>2+ years</strong> of Software
+      Engineering <strong>internship experience</strong> and have worked on a variety
+      of <strong>technical projects</strong>, using a different tools and
+      technologies along the way.
+    </p>
+    <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
+      In my free time, I enjoy playing sports such as <strong>basketball</strong
+      > 🏀, <strong>soccer</strong> ⚽, and <strong>swimming</strong> 🏊🏼‍♂️. I am also
+      an avid <strong>gamer</strong> 🎮! Aside from these activities, I enjoy programming
+      in my past time, working on <strong>side-projects</strong> that have meaningful
+      applications. I also enjoy keeping up to date with the latest <strong>
+        technolgical trends and news</strong
+      > 📰, continuously expanding upon my technical skillset.
+    </p>
+    <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
+      Currently, I am seeking <strong
         >permanent, full time new graduate roles</strong
-      > in <strong>Software Engineering</strong> and other related positions, and
-      would be more than interested in exploring any opportunity presented.
+      > in <strong>Software Engineering</strong>, <strong
+        >Production Engineering</strong
+      >, <strong>Cloud</strong>, and <strong>DevOps</strong>, and would be more
+      than interested in exploring any opportunity presented.
     </p>
   </section>
   <section
     id='experience'
-    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full'
+    class='py-16 px-6 md:scroll-mt-24 scroll-mt-64 flex items-center flex-col w-full'
   >
     <Title>Experience</Title>
     <div>
@@ -108,7 +147,7 @@ import ProjectURL from '../components/ProjectURL.astro';
         date='September 2023 - December 2023'
         description={[
           'Engineered production-grade front-end features with <strong>Next.js</strong> and <strong>Redux</strong> for the Wild Fork e-commerce platform, contributing to a retail conversion rate increase from <strong>2 to 2.5%</strong>',
-          'Designed digital campaigns using <strong>Dynamic Yield (DY)</strong> using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to drive personalized customer experiences, increasing the click-through rate by <strong>57%</strong> and achieving a profit increase exceeding <strong>twofold</strong>',
+          'Designed digital campaigns on <a href="https://www.dynamicyield.com/ecommerce/" target="_blank"><strong><span class="transition-colors hover:text-gray-400">Dynamic Yield (DY)&#8482;</span></strong></a> using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to drive personalized customer experiences, increasing the click-through rate by <strong>57%</strong> and achieving a profit increase exceeding <strong>twofold</strong>',
           'Implemented an <strong>Add To Cart</strong> service with DY and JavaScript for product recommendation carousels, leveraging a Wild Fork <strong>cart API</strong> and <strong>Redux</strong> to successfully update cart state, now live across <strong>10+</strong> webpages',
           'Orchestrated content-based workflows with <strong>Contentful</strong> and <strong>GraphQL</strong> to fetch digital assets and launch state-of-the-art digital experiences for product retail webpages and campaigns',
         ]}
@@ -176,7 +215,7 @@ import ProjectURL from '../components/ProjectURL.astro';
   </section>
   <section
     id='skills'
-    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full bg-green-100 text-green-950'
+    class='py-16 px-6 md:scroll-mt-24 scroll-mt-64 flex items-center flex-col w-full bg-green-100 text-green-950'
   >
     <Title class='mb-8'>Skills</Title>
     <div
@@ -286,7 +325,7 @@ import ProjectURL from '../components/ProjectURL.astro';
   </section>
   <section
     id='projects'
-    class='py-16 px-6 scroll-mt-24 flex items-center flex-col w-full'
+    class='py-16 px-6 md:scroll-mt-24 scroll-mt-64 flex items-center flex-col w-full'
   >
     <Title>Projects</Title>
     <ProjectURL
@@ -325,8 +364,8 @@ import ProjectURL from '../components/ProjectURL.astro';
     <ProjectURL
       name='Battlesnake Game'
       description={[
-        'Co-developed a snake for the popular Battesnake virtual mini-game, as a web server responding to requests on a game board client',
-        'Implemented API endpoints and back-end logic in <strong>Python</strong>, to process game client information on the current state of the board, and determine an ideal move for the snake',
+        'Co-developed a snake for the popular Battesnake virtual mini-game, as a <strong>web server</strong> responding to requests from a game board client',
+        'Implemented <strong>REST API</strong> endpoints and back-end logic in <strong>Python</strong>, to process game client information on the current state of the board, and determine an ideal move for the snake',
         'Achieved <strong>2nd place</strong> in the <strong>RBC Summer 2022 Battlesnake competition</strong>, among teams in the <strong>expert developer division</strong>',
       ]}
       image='/images/63020bccf01cad40ee758c34_snake.gif'
