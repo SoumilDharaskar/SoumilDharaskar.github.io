@@ -13,7 +13,6 @@ import WorkExperience from '../components/WorkExperience.astro';
 import Title from '../components/Title.astro';
 import Project from '../components/Project.astro';
 import ProjectURL from '../components/ProjectURL.astro';
-import Typed from 'typed.js';
 ---
 
 <Layout title='Soumil Dharaskar'>
@@ -41,6 +40,8 @@ import Typed from 'typed.js';
           is:inline
           src='https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js'></script>
         <script>
+          import Typed from 'typed.js';
+
           var typed = new Typed('#about-me-typed', {
             strings: [
               '^1000Software Engineer.^1000 ',
