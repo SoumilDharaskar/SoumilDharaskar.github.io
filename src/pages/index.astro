@@ -106,34 +106,24 @@ import ProjectURL from '../components/ProjectURL.astro';
       class='rounded-3xl mt-6 size-28'
     />
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      <strong>Hey there! 👋</strong> My name is <strong>Soumil Dharaskar</strong
+      <strong>Hey there!</strong> My name is <strong>Soumil Dharaskar</strong
       >, and I am a <strong>Full-Stack Software Engineer</strong> and a graduate
       of the <strong>Computer Engineering</strong> program at the
       <strong>University of Waterloo</strong> in Waterloo, Ontario, Canada, having
       completed my Bachelor of Applied Science Degree as of April 2024.
     </p>
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      Throughout my career, I have received <strong>2+ years</strong> of Software
-      Engineering <strong>internship experience</strong> and have worked on a variety
-      of <strong>technical projects</strong>, using a different tools and
-      technologies along the way.
+      I have <strong>2 years</strong> of internship and <strong>8 months</strong> of full-time Software
+      Engineering experience, using a variety of tools and frameworks to create high throughput, 
+      low latency software solutions.
     </p>
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      In my free time, I enjoy playing sports such as <strong>basketball</strong
-      > 🏀, <strong>soccer</strong> ⚽, and <strong>swimming</strong> 🏊🏼‍♂️. I am also
-      an avid <strong>gamer</strong> 🎮! Aside from these activities, I enjoy programming
-      in my past time, working on <strong>side-projects</strong> that have meaningful
-      applications. I also enjoy keeping up to date with the latest <strong>
-        technolgical trends and news</strong
-      > 📰, continuously expanding upon my technical skillset.
-    </p>
+      In my free time, I enjoy swimming, going to the gym, and going on walks or runs.
+      I also enjoy programming on the side, solving practice problems and working on side-projects
+      using trending technologies in industry.
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      Currently, I am seeking <strong
-        >permanent, full time new graduate roles</strong
-      > in <strong>Software Engineering</strong>, <strong
-        >Production Engineering</strong
-      >, <strong>Cloud</strong>, and <strong>DevOps</strong>, and would be more
-      than interested in exploring any opportunity presented.
+      Currently, I am <strong>seeking permanent, full time early career roles</strong>
+      in Full Stack Software Engineering positions, and would love to explore any opportunity presented.
     </p>
   </section>
   <section
@@ -142,16 +132,29 @@ import ProjectURL from '../components/ProjectURL.astro';
   >
     <Title>Experience</Title>
     <div>
+      <WorkExperience 
+        role='Software Development Engineer' 
+        company='Ford Motor Company' 
+        companyLogo='/images/Ford_logo_flat.svg.png'
+        date='August 2024 - May 2025'
+        description={[
+          'Implemented full-stack Android features on an infotainment screen using <strong>Java</strong> and <strong>Eclipse Mosquitto&#8482 (MQTT)</strong>, <strong>facilitating low-latency synchronization</strong> between vehicle opt-in preferences and <strong>cloud systems</strong>',
+          'Designed and enhanced <strong>C++</strong> proxies interfacing with timezone and satellite microservices in a distributed <strong>ECU</strong> architecture, enabling prompt and accurate UTC offset updates to <strong>20+</strong> timezones in the infotainment clock',
+          'Developed comprehensive unit tests using <strong>GoogleTest</strong> and mock-based validation for clock-supporting microservices, <strong>increasing code coverage</strong> from <strong>30%</strong> to over <strong>90%</strong> and <strong>improving service reliability</strong>',
+        ]}
+      >
+
+      </WorkExperience>
       <WorkExperience
         role='Software Engineer Intern'
         company='Wild Fork Canada'
         companyLogo='/images/337240544_1297084747557655_7176881005707344321_n.jpg'
         date='September 2023 - December 2023'
         description={[
-          'Engineered production-grade front-end features with <strong>Next.js</strong> and <strong>Redux</strong> for the Wild Fork e-commerce platform, contributing to a retail conversion rate increase from <strong>2 to 2.5%</strong>',
-          'Designed digital campaigns on <a href="https://www.dynamicyield.com/ecommerce/" target="_blank"><strong><span class="transition-colors hover:text-gray-400">Dynamic Yield (DY)&#8482;</span></strong></a> using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to drive personalized customer experiences, increasing the click-through rate by <strong>57%</strong> and achieving a profit increase exceeding <strong>twofold</strong>',
-          'Implemented an <strong>Add To Cart</strong> service with DY and JavaScript for product recommendation carousels, leveraging a Wild Fork <strong>cart API</strong> and <strong>Redux</strong> to successfully update cart state, now live across <strong>10+</strong> webpages',
-          'Orchestrated content-based workflows with <strong>Contentful</strong> and <strong>GraphQL</strong> to fetch digital assets and launch state-of-the-art digital experiences for product retail webpages and campaigns',
+          'Engineered responsive production-grade front-end features for an e-commerce platform using <strong>Next.js</strong> and <strong>Redux</strong>, raising the retail conversion rate by <strong>25%</strong>',
+          'Designed and deployed personalized digital campaigns using <a href="https://www.dynamicyield.com/ecommerce/" target="_blank"><strong><span class="transition-colors hover:text-gray-400">Dynamic Yield (DY)&#8482</span></strong></a> with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>, increasing click-through rates by <strong>57%</strong> and <strong>doubling profit margins</strong>',
+          'Owned the <strong>end-to-end development</strong> of an ’Add to Cart’ service for product recommendation carousels in <strong>JavaScript</strong> and Redux, integrated with an internal cart API, <strong>enabling dynamic updates</strong> across <strong>10+</strong> high-traffic web pages',
+          'Conducted <strong>A/B testing</strong> on multiple site variations, using data analysis to <strong>identify and launch</strong> top-performing campaigns',
         ]}
       />
       <WorkExperience
@@ -160,10 +163,10 @@ import ProjectURL from '../components/ProjectURL.astro';
         companyLogo='/images/Ford_logo_flat.svg.png'
         date='January 2023 - April 2023'
         description={[
-          'Developed and enhanced various settings, text, input, and processing features for the <strong>SYNC4</strong> human-machine interface using <strong>React.js</strong> and <strong>Redux Saga</strong>',
-          'Implemented integral software changes by simulating and updating a live SYNC4 workbench using <strong>VnModSim</strong>, <strong>MQTT</strong>, and <strong>VNC Viewer</strong>, to test new changes in real-time and ensure <strong>performance</strong> and <strong>reliability</strong>',
-          'Participated in 3-week sprints, <strong>led code reviews</strong>, and contributed to stand-ups as part of the <strong>Scrum</strong> agile framework, to gain and provide constructive feedback, and increase productivity, team cohesion, and efficiency',
-          'Implemented React unit tests via <strong>Jest + Mocha</strong> with <strong>98%</strong> branch coverage and dynamically logged <strong>90%</strong> of variables',
+          'Developed accessible <strong>React.js</strong> components for the SYNC4 infotainment settings interface with <strong>Redux Saga</strong>, enabling <strong>real-time customization</strong> for in-vehicle systems, <strong>enhancing the user experience</strong>',
+          'Applied the <strong>MQTT publish-subscribe</strong> model for <strong>CAN</strong> log reception and ECU signal correction, <strong>improving display responsiveness</strong> by <strong>70%</strong> under load',
+          'Authored extensive <strong>React.js</strong> tests using <strong>Jest</strong> and <strong>Mocha</strong>, achieving <strong>98%</strong> branch coverage, <strong>ensuring reliability and robustness</strong>',
+          'Participated in 3-week sprints, <strong>led code reviews</strong>, and contributed to stand-ups as part of the <strong>Scrum</strong> Agile framework, to gain and provide constructive feedback, and increase productivity, team cohesion, and efficiency',
         ]}
       />
       <WorkExperience
@@ -172,11 +175,9 @@ import ProjectURL from '../components/ProjectURL.astro';
         companyLogo='/images/RBC-Logo.png'
         date='May 2022 - August 2022'
         description={[
-          'Implemented integral UI display features in <strong>React.js</strong> for a test environment dashboard, enhancing the <strong>status monitoring interface</strong> for various banking software services',
-          'Established an <strong>HDFS</strong> connection and integrated <strong>Hadoop</strong> with the dashboard back-end using <strong>Java</strong> and <strong>Spring Boot</strong>, to increase <strong>dataset processing power</strong> and <strong>data access throughput</strong>',
-          'Developed scalable data polling software using Java classes and <strong>POJOs</strong>, with Spring Boot, to improve data reception from banking services',
-          'Harnessed <strong>JDBC</strong> to remodel <strong>PostgreSQL</strong> table architecture to optimize SQL queries, <strong>reducing query execution time</strong>',
-          'Leveraged <strong>Python</strong>, the <strong>Jira API</strong>, and <strong>Pandas</strong> to immediately capture data and initiate lead time calculation for <strong>20+</strong> Jira tasks',
+          'Built <strong>React.js</strong> dashboard features monitoring test environments, <strong>improving live observability</strong> into application health',
+          '<strong>Horizontally scaled</strong> the dashboard back-end by integrating the Web Hadoop Distributed File System REST API <a href="https://hadoop.apache.org/docs/r1.0.4/webhdfs.html" target="_blank"><strong><span class="transition-colors hover:text-gray-400">(WebHDFS)&#8482</span></strong></a> for <strong>high-volume dataset processing</strong> using <strong>Java</strong> and <strong>Spring Boot</strong>, <strong>reducing throughput bottlenecks</strong> by <strong>48%</strong>',
+          'Optimized <strong>PostgreSQL</strong> queries and schema design via <strong>JDBC</strong>, <strong>reducing query execution</strong> time by <strong>23%</strong> and <strong>improving database access efficiency</strong>',
         ]}
       />
       <WorkExperience
@@ -185,9 +186,9 @@ import ProjectURL from '../components/ProjectURL.astro';
         companyLogo='/images/image.jpg'
         date='September 2021 - December 2021'
         description={[
-          'Refactored <strong>100+</strong> testing scripts leveraging <strong>Jenkins CI/CD jobs</strong>, to automate the deployment of repository code to <strong>SonarQube</strong>, <strong>minimizing code verification delay</strong>',
-          'Configured SonarQube projects leveraging <strong>Ansible</strong> jobs to perform efficient code analysis for errors and formulate analysis reports, <strong>reducing code vulnerabilities</strong> by <strong>70%</strong>',
-          'Developed <strong>YAML</strong> code for <strong>Ansible Playbooks</strong>, <strong>increasing deployment efficiency for compiled artifacts</strong> from SonarQube projects to target hosts',
+          'Automated deployment for <strong>100+</strong> Jenkins <strong>CI/CD</strong> jobs to SonarQube, <strong>eliminating manual overhead</strong>',
+          'Configured SonarQube projects using Ansible jobs for static analysis, <strong>decreasing code vulnerabilities</strong> by <strong>70%</strong> and <strong>improving system security</strong>',
+          'Developed <strong>YAML</strong>-based Ansible Playbooks to automate deployment of compiled artifacts to target environments, <strong>enhancing delivery reliability</strong>',
           'Led the financial planning sector in a <strong>team-based design challenge</strong> to propose an <strong>online portal</strong> that would <strong>improve the onboarding process</strong> for new hires',
         ]}
       />
@@ -199,7 +200,7 @@ import ProjectURL from '../components/ProjectURL.astro';
         description={[
           'Implemented <strong>10+ Python scripts</strong> for an <strong>ETL pipeline</strong>, to assist in the migration of Sun Life accounting standards to IFRS17',
           'Created <strong>AWS Lambda functions</strong> and <strong>SQL queries</strong> for <strong>AWS Glue jobs</strong>, to facilitate <strong>Amazon S3</strong> ETL operations',
-          'Compiled and analyzed a document of various data feeds used for comprehensive testing and a model office verification platform, for outlining the data transfer process between infrastructure databases in the IFRS17 migration',
+          'Compiled and analyzed a document of various data feeds used for comprehensive testing and a verification platform, for outlining the data transfer process between infrastructure databases in the IFRS17 migration',
         ]}
       />
       <WorkExperience
