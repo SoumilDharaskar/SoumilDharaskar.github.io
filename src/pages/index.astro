@@ -94,6 +94,13 @@ import ProjectURL from '../components/ProjectURL.astro';
         >Projects</a
       >
     </li>
+    <li>
+      <a
+        href='#contact'
+        class='block px-8 py-2 border-white rounded-md border uppercase tracking-wider select-none transition ease-in-out delay-50 hover:scale-105 hover:bg-green-300 duration-300 hover:text-blue-950 hover:border-blue-950'
+        >Contact & Links</a
+      >
+    </li>
   </ul>
   <section
     id='bio'
@@ -106,25 +113,25 @@ import ProjectURL from '../components/ProjectURL.astro';
       class='rounded-3xl mt-6 size-28'
     />
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      <strong>Hey there!</strong> My name is <strong>Soumil Dharaskar</strong
-      >, and I am a <strong>Full-Stack Software Engineer</strong> and a graduate
+      <strong>Hey there!</strong> My name is <strong>Soumil Dharaskar</strong>,
+      and I am a <strong>Full-Stack Software Engineer</strong> currently <strong>seeking
+      permanent, full time early career roles</strong> in Software Engineering</strong>. 
+    </p>
+    <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
+      I am a graduate
       of the <strong>Computer Engineering</strong> program at the
       <strong>University of Waterloo</strong> in Waterloo, Ontario, Canada, having
       completed my Bachelor of Applied Science Degree as of April 2024.
     </p>
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
       I have <strong>2 years</strong> of internship and <strong>8 months</strong> of full-time Software
-      Engineering experience, using a variety of tools and frameworks to create high throughput, 
-      low latency software solutions.
+      Engineering experience, using a variety of tools and frameworks to create <strong>high throughput</strong>, 
+      <strong>low latency</strong> software solutions.
     </p>
     <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
       In my free time, I enjoy swimming, going to the gym, and going on walks or runs.
       I also enjoy programming on the side, solving practice problems and working on side-projects
       using trending technologies in industry.
-    <p class='mt-6 max-w-2xl text-lg text-center text-pretty'>
-      Currently, I am <strong>seeking permanent, full time early career roles</strong>
-      in Full Stack Software Engineering positions, and would love to explore any opportunity presented.
-    </p>
   </section>
   <section
     id='experience'
@@ -386,10 +393,28 @@ import ProjectURL from '../components/ProjectURL.astro';
       imageAlt='Languages Picture'
     />
   </section>
-  <footer
-    class='flex flex-col items-center justify-center w-full bg-gray-800 text-white py-8 gap-4'
-  >
+  <footer id='contact' class='flex flex-col items-center justify-center w-full bg-gray-800 text-white py-8 gap-4'>
     <ul class='flex gap-4 items-center'>
+      <li >
+        <p class='font-bold text-2xl'>Contact Me: </p>
+      </li>
+      <li>
+        <a href='https://www.linkedin.com/in/soumil-dharaskar/' target='_blank'>
+          <span class='sr-only'>LinkedIn</span>
+          <svg
+            width="24px" height="28px"
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 24 24'
+            class='w-8 transition-colors hover:text-gray-400'
+          >
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              fill='currentColor'></path>
+          </svg>
+        </a>
+      </li>
       <li>
         <a href='https://github.com/SoumilDharaskar' target='_blank'>
           <span class='sr-only'>GitHub</span>
